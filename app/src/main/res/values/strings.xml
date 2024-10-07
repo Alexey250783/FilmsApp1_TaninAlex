@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FilmSearch</string>
+    <string name="textWeb">Постеры взяты https://www.movieposters.com/</string>
+    <string name="btn_menu">Меню</string>
+    <string name="btn_favourites">Избранное</string>
+    <string name="btn_W_later">Посмотреть позже</string>
+    <string name="btn_Compilations">Подборки</string>
+    <string name="btn_Setting">Настройки</string>
+</resources>
