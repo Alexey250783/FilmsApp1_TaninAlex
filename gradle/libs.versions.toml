@@ -10,6 +10,10 @@ activityCompose = "1.9.2"
 composeBom = "2024.04.01"
 constraintlayout = "2.1.4"
 cardview = "1.0.0"
+supportAnnotations = "28.0.0"
+supportV4 = "28.0.0"
+appcompat = "1.7.0"
+appcompatV7 = "28.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +32,10 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
+support-v4 = { group = "com.android.support", name = "support-v4", version.ref = "supportV4" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+appcompat-v7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

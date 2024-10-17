@@ -47,6 +47,12 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -61,6 +67,10 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.cardview)
+    implementation(libs.support.annotations)
+    implementation(libs.support.v4)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.appcompat.v7)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,4 +78,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.google.android.material:material:1.13.0-alpha06")
 }
