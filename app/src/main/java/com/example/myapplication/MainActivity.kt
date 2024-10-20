@@ -7,7 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import com.example.myapplication.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,6 @@ class MainActivity : ComponentActivity() {
 
         binding.buttonMenu.setOnClickListener()
     }
-
 }
 
 
