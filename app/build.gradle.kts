@@ -71,6 +71,9 @@ dependencies {
     implementation(libs.support.v4)
     implementation(libs.androidx.appcompat)
     implementation(libs.appcompat.v7)
+    implementation(libs.design)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.google.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,5 +81,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("com.google.android.material:material:1.13.0-alpha07")
+    implementation(libs.material)
+    implementation(libs.material.v190)
+    implementation (libs.material.v1120)
 }

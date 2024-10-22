@@ -1,13 +1,8 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.enableEdgeToEdge
-import androidx.activity.viewModels
 import com.example.myapplication.databinding.ActivityMainBinding
-
 
 
 class MainActivity : ComponentActivity() {
@@ -19,8 +14,24 @@ class MainActivity : ComponentActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.buttonMenu.setOnClickListener()
+
+        fun initNavigation() {
+            topAppBar.setOnMenuItemClickListener {
+                when (it.itemId) {
+                    R.id.settings -> {
+                        Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
+                        true
+                    }
+
+                    else -> false
+                }
+            }
+        }
     }
 }
+
+
+
+
 
 
