@@ -21,7 +21,7 @@
             app:menu="@menu/top_app_bar"
             app:navigationIcon="@drawable/round_menu"
             app:title="@string/page_title"
-            app:titleTextColor="@color/teal_200"/>
+            app:titleTextColor="@color/teal_200" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
