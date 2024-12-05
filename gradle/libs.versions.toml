@@ -21,6 +21,18 @@ design = "28.0.0"
 viewpager2 = "1.1.0"
 googleMaterialVersion = "1.13.0-alpha06"
 gridlayout = "1.0.0"
+recyclerview = "1.4.0-rc01"
+coordinatorlayout = "1.1.0"
+coordinatorlayoutVersion = "1.3.0-alpha02"
+comGoogleAndroidMaterialMaterial = "1.13.0-alpha08"
+comGoogleAndroidMaterialMaterial2 = "1.2.0"
+recyclerviewV7 = "28.0.0"
+constraintLayoutVersion = "2.0.4"
+library = "8.7.3"
+navigationFragment = "2.8.4"
+gridlayoutV7 = "28.0.0"
+annotation = "1.9.1"
+navigationUiKtx = "2.8.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -50,6 +62,18 @@ design = { group = "com.android.support", name = "design", version.ref = "design
 androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "googleMaterialVersion" }
 androidx-gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "gridlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayoutVersion" }
+com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "comGoogleAndroidMaterialMaterial" }
+com-google-android-material-material2 = { group = "com.google.android.material", name = "material", version.ref = "comGoogleAndroidMaterialMaterial2" }
+recyclerview-v7 = { group = "com.android.support", name = "recyclerview-v7", version.ref = "recyclerviewV7" }
+constraint-layout = { group = "com.android.support.constraint", name = "constraint-layout", version.ref = "constraintLayoutVersion" }
+library = { group = "com.android.databinding", name = "library", version.ref = "library" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+gridlayout-v7 = { group = "com.android.support", name = "gridlayout-v7", version.ref = "gridlayoutV7" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

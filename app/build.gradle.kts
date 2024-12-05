@@ -53,6 +53,7 @@ android {
     viewBinding {
         enable = true
     }
+
 }
 
 dependencies {
@@ -74,6 +75,19 @@ dependencies {
     implementation(libs.design)
     implementation(libs.androidx.viewpager2)
     implementation(libs.google.material)
+    implementation(libs.androidx.gridlayout)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.coordinatorlayout)
+    implementation(libs.coordinatorlayout)
+    implementation(libs.com.google.android.material.material)
+    implementation(libs.com.google.android.material.material2)
+    implementation(libs.recyclerview.v7)
+    implementation(libs.constraint.layout)
+    implementation(libs.library)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.gridlayout.v7)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
