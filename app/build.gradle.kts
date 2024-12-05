@@ -88,6 +88,7 @@ dependencies {
     implementation(libs.gridlayout.v7)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
