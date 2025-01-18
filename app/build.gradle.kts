@@ -93,6 +93,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.kotlin.gradle.plugin)
     implementation(libs.baselibrary)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
