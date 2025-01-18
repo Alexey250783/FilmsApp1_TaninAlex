@@ -36,6 +36,8 @@ navigationUiKtx = "2.8.4"
 activity = "1.9.3"
 kotlinGradlePlugin = "2.1.20-Beta1"
 baselibrary = "8.7.3"
+navigationFragmentKtx = "2.9.0-alpha04"
+navigationUiKtxVersion = "2.9.0-alpha04"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -80,6 +82,8 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
 baselibrary = { group = "com.android.databinding", name = "baseLibrary", version.ref = "baselibrary" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtxVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

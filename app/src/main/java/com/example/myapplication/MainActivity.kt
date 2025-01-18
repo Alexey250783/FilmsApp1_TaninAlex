@@ -3,10 +3,15 @@ package com.amsdevelops.filmssearch
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewbinding.ViewBinding
 import com.example.myapplication.HomeFragment
 import com.example.myapplication.databinding.ActivityMainBinding
-import kotlinx.parcelize.Parcelize
 
+
+private val ViewBinding.R: Any
+    get() {
+        TODO("Not yet implemented")
+    }
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,7 +57,11 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 binding.R.id.favorites -> {
-                    Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragment_placeholder, FavoritesFragment())
+                        .addToBackStack(null)
+                        .commit()
                     true
                 }
 
