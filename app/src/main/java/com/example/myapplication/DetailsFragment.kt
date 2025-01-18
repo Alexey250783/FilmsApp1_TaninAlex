@@ -2,19 +2,30 @@ package com.amsdevelops.filmssearch
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_details.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 
-class DetailsActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_details)
+
+class DetailsFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_details, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         setFilmsDetails()
     }
 
     private fun setFilmsDetails() {
         //Получаем наш фильм из переданного бандла
-        val film = intent.extras?.get("film") as Film
+        val film = arguments?.get("film") as Film
 
         //Устанавливаем заголовок
         details_toolbar.title = film.title

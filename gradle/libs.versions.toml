@@ -34,6 +34,8 @@ gridlayoutV7 = "28.0.0"
 annotation = "1.9.1"
 navigationUiKtx = "2.8.4"
 activity = "1.9.3"
+kotlinGradlePlugin = "2.1.20-Beta1"
+baselibrary = "8.7.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -76,6 +78,8 @@ gridlayout-v7 = { group = "com.android.support", name = "gridlayout-v7", version
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+baselibrary = { group = "com.android.databinding", name = "baseLibrary", version.ref = "baselibrary" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

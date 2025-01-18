@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
 }
 
 android {
@@ -54,6 +55,7 @@ android {
         enable = true
     }
 
+
 }
 
 dependencies {
@@ -89,6 +91,8 @@ dependencies {
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
+    implementation(libs.kotlin.gradle.plugin)
+    implementation(libs.baselibrary)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
