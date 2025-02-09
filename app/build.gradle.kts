@@ -93,6 +93,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.kotlin.gradle.plugin)
     implementation(libs.baselibrary)
+    implementation(libs.glide)
+    implementation(libs.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
