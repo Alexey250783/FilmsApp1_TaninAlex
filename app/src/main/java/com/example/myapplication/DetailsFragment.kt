@@ -33,5 +33,10 @@ class DetailsFragment : Fragment() {
         details_poster.setImageResource(film.poster)
         //Устанавливаем описание
         details_description.text = film.description
+
+        details_fab_favorites.setImageResource(
+            if (film.isInFavorites) R.drawable.ic_baseline_favorite_24
+            else R.drawable.ic_baseline_favorite_border_24
+        )
     }
 }
