@@ -1,14 +1,14 @@
-package com.example.myapplication
-
 package com.amsdevelops.filmssearch
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.util.*
 
 class HomeFragment : Fragment() {
     private lateinit var filmsAdapter: FilmListRecyclerAdapter
@@ -65,6 +65,11 @@ class HomeFragment : Fragment() {
         )
     )
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        retainInstance = true
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -75,6 +80,21 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        AnimationHelper.performFragmentCircularRevealAnimation(
+            home_fragment_root,
+            requireActivity(),
+            1
+        )
+
+        initSearchView()
+
+        //находим наш RV
+        initRecyckler()
+        //Кладем нашу БД в RV
+        filmsAdapter.addItems(filmsDataBase)
+    }
+
+    private fun initSearchView() {
         search_view.setOnClickListener {
             search_view.isIconified = false
         }
@@ -83,7 +103,7 @@ class HomeFragment : Fragment() {
         search_view.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             //Этот метод отрабатывает при нажатии кнопки "поиск" на софт клавиатуре
             override fun onQueryTextSubmit(query: String?): Boolean {
-                TODO("Not yet implemented")
+                return true
             }
 
             //Этот метод отрабатывает на каждое изменения текста
@@ -104,11 +124,6 @@ class HomeFragment : Fragment() {
                 return true
             }
         })
-
-        //находим наш RV
-        initRecyckler()
-        //Кладем нашу БД в RV
-        filmsAdapter.addItems(filmsDataBase)
     }
 
     private fun initRecyckler() {
