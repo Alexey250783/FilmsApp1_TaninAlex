@@ -18,6 +18,10 @@ class WatchLaterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        AnimationHelper.performFragmentCircularRevealAnimation(watch_later_fragment_root, requireActivity(), 3)
+        AnimationHelper.performFragmentCircularRevealAnimation(
+            watch_later_fragment_root,
+            requireActivity(),
+            3
+        )
     }
 }

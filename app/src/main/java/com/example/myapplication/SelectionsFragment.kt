@@ -19,6 +19,10 @@ class SelectionsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        AnimationHelper.performFragmentCircularRevealAnimation(selections_fragment_root, requireActivity(), 4)
+        AnimationHelper.performFragmentCircularRevealAnimation(
+            selections_fragment_root,
+            requireActivity(),
+            4
+        )
     }
 }
