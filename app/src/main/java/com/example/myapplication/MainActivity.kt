@@ -85,4 +85,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    //Ищем фрагмент по тэгу, если он есть то возвращаем его, если нет - то null
+    private fun checkFragmentExistence(tag: String): Fragment? =
+        supportFragmentManager.findFragmentByTag(tag)
+
+    private fun changeFragment(fragment: Fragment, tag: String) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, fragment, tag)
+            .addToBackStack(null)
+            .commit()
+    }
 }
