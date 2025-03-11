@@ -95,6 +95,8 @@ dependencies {
     implementation(libs.baselibrary)
     implementation(libs.glide)
     implementation(libs.compiler)
+    implementation(libs.androidx.versionedparcelable)
+    implementation(libs.versionedparcelable)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

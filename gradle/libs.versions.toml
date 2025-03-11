@@ -38,6 +38,8 @@ kotlinGradlePlugin = "2.1.20-Beta1"
 baselibrary = "8.7.3"
 glide = "5.0.0-rc01"
 compiler = "5.0.0-rc01"
+versionedparcelable = "1.2.1"
+versionedparcelableVersion = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -84,6 +86,8 @@ kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-p
 baselibrary = { group = "com.android.databinding", name = "baseLibrary", version.ref = "baselibrary" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "compiler" }
+androidx-versionedparcelable = { group = "androidx.versionedparcelable", name = "versionedparcelable", version.ref = "versionedparcelable" }
+versionedparcelable = { group = "androidx.versionedparcelable", name = "versionedparcelable", version.ref = "versionedparcelableVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
